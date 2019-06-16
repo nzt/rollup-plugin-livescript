@@ -1,0 +1,30 @@
+{
+  "name": "rollup-plugin-livescript",
+  "version": "0.1.0",
+  "description": "Rollup plugin for LiveScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd test && rollup -c ./rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fgborges/rollup-plugin-livescript.git"
+  },
+  "keywords": [
+    "livescript",
+    "rollup"
+  ],
+  "author": "Fernando Garcia Borges",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/fgborges/rollup-plugin-livescript/issues"
+  },
+  "homepage": "https://github.com/fgborges/rollup-plugin-livescript#readme",
+  "dependencies": {
+    "livescript": "^1.6.0",
+    "rollup-pluginutils": "^2.8.1"
+  },
+  "devDependencies": {
+    "rollup": "^1.15.5"
+  }
+}

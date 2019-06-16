@@ -11,7 +11,7 @@ module.exports = (options = {}) => {
         warn: true,
         map: 'linked',
         sourceMap: true,
-        extensions: ['ls'],
+        extensions: ['.ls'],
         ...options
     }
     const filter = createFilter(options.include, options.exclude)
@@ -20,7 +20,8 @@ module.exports = (options = {}) => {
             if (!filter(id) || options.extensions.indexOf(extname(id)) === -1) {
                 return null
             } else {
-                const output = livescript.compile(code, {filename: id, options})
+                options = { filename: id, outputFilename: id.replace(/\.ls$/,'.js'), ...options }
+                const output = livescript.compile(code, options)
                 return {
                     code: output.code,
                     map: output.map.toString()
