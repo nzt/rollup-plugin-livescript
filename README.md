@@ -38,4 +38,4 @@ export default {
 ## License and Copyright
 
 This software is licensed under the GPLv3 or later
-Copyright (c) Fernando Garcia Borges All Right Reserved.
+Copyright (c) TANIGUCHI Masaya All Right Reserved.
